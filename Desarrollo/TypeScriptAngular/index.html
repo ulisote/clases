@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body{
+			font-family: Roboto, Helvetica;
+			background-color: #f5f5f5;
+		}
+		h1,h2,h3,h4,h5,p{
+			margin: 0;
+		}
+		span{
+			color: #666;
+			font-style: italic;
+		}
+		h1,{margin: 12px 0}
+		h2,h3{margin: 6px 0}
+		h4{margin: 3px 0}
+		code{
+			background-color: black;
+			color: #eee;
+			padding: 24px 48px;
+			margin: 12px;
+			border-radius: 6px;
+			display: inline-block;
+			font-size: 1.2em;
+		}
+		.titulo{
+			font-size: 3em;
+			display: block;
+			text-align: center;
+			background-color: white;
+			border-radius: 8px;
+			padding: 12px 0;
+			margin: 12px 48px;
+		}
+		.titulo_section{
+			color: darkblue;
+			margin: 12px 24px;
+			font-size:2em;
+		}
+		.notes{
+			background-color: #FAFAA7;
+			max-width: 50%;
+			border-radius: 8px;
+			padding: 12px 24px;
+		}
+		.tools{
+			background-color: #E5E5E5;
+			max-width: 50%;
+			border-radius: 8px;
+			padding: 12px 24px;
+		}
+		.link{
+			background-color:#00BB2D;
+			padding: 12px 48px;
+			font-weight: bold;
+			color: white;
+			text-decoration: none;
+			border-radius: 8px;
+			display: inline-block; 
+		}
+		.clase{
+			max-width: 800px;
+			border-radius: 8px;
+			padding: 8px;
+			background-color: white;
+			margin: 6px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="titulo">TypeScript con Angular por Belatrix</h1>
+	<main>
+		<h2 class="titulo_section">Fundamentos de TypeScript</h2>
+		<section>
+			<div class="clase">
+				<h3>¿Qué es Typescript?</h3>
+				<p>En esta clase el profesor Alan Buscaglia nos explica qué es TypeScript.
+					<br><br>TypeScript es un lenguaje fuertemente tipado creado por Microsoft, aunque está muy relacionado con el framework Angular, TypeScript es un lenguaje independiente que puedes usar para proyectos de back-end con Express o Front-end ya sea con Vue, React o Angular. Para que TypeScript pueda correr en el navegador debe ser transpilado a JavaScript con herramientas como Babel.</p>
+					<br>
+					<div class="tools">
+						<h4>TypeScript - JavaScript that scales.</h4>
+						<a href="https://www.typescriptlang.org/" class="link">Ir a</a>
+						<h4>Documentation · TypeScript</h4>
+						<a href="https://www.typescriptlang.org/docs/" class="link">Ir a</a>
+					</div>
+			</div>
+			<div class="clase">
+				<h3>Types, Type Inference y Type keyword</h3>
+				<p>
+					A diferencia de JavaScript, TypeScript es un lenguaje fuertemente tipado. Mientras que en JavaScript declaramos una constante de la siguiente manera:
+					<br>
+					<code>
+						const a = 'hola'
+					</code>
+					<br>
+					En TypeScript utilizando el carácter ‘:’ le asignamos un tipo de dato a la variable :
+					<br>
+					<code>
+						const a: string = 'hola'
+					</code>
+					<br>
+					En caso de que no le asignemos un tipo de dato a la variable, TypeScript automáticamente le va a asignar un tipo de dato, esto es el Type Inference.
+					<br><br>
+					Si le asignamos el tipo de dato any a una variable, esta variable va a poder almacenar cualquier tipo de dato, similar a JavaScript Vainilla.
+					<br><br>
+					Dentro de TypeScript contamos con la palabra reservada type que nos va a ser de utilidad cuando hagamos nuestros propios tipos de datos.
+				</p>
+			</div>
+			<div class="clase">
+				<h3>Shapes</h3>
+				<p>Cada uno de los tipos tiene una forma o estructura en que es representado, esto es mediante sus propiedades. Dentro de TypeScript si dos variables poseen propiedades idénticas aunque sean de distintas interfaces o clases, estas pueden ser asignadas entre sí.</p>
+			</div>
+		</section>
+	</main>
+    <textarea rows="6" cols="35" disabled="true">
+        <!doctype html>
+        <html>
+            <body>
+                Hello QNimate!!!
+            </body>
+        </html>
+    </textarea>
+</body>
+</html>
